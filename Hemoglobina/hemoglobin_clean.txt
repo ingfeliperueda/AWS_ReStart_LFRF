@@ -1,0 +1,4 @@
+ with open('hemoglobin_seq.txt', 'r') as f_in, open('hemoglobin_clean.txt', 'w') as f_out:
+     for line in f_in:
+         if not line.startswith('>'):
+             f_out.write(line.strip())
