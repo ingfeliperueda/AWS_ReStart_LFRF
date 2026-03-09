@@ -7,14 +7,14 @@ Script para limpiar secuencia FASTA de hemoglobina (Ejercicio 2).
 """
 
 sec_limpia = ""
-with open('hemoglobin_seq.txt', 'r') as f:
+with open('hemoglobin/hemoglobin_seq.txt', 'r') as f:
     for linea in f:
         linea = linea.strip()  # Quita espacios/saltos
         if not linea.startswith('>'):  # Salta header FASTA
             sec_limpia += linea.upper()  # Concatena, mayúsculas
 
 # Guarda archivo limpio (una sola línea)
-with open('hemoglobin_clean.txt', 'w') as f:
+with open('hemoglobin/hemoglobin_clean.txt', 'w') as f:
     f.write(sec_limpia)
 
 print(f"Secuencia limpia guardada: {len(sec_limpia)} aa")

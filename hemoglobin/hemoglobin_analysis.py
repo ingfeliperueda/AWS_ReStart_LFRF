@@ -14,7 +14,7 @@ import json
 from collections import Counter
 
 # Leer secuencia limpia (solo aminoácidos, sin headers/españoles/saltos)
-with open('hemoglobin_clean.txt', 'r') as f:
+with open('hemoglobin/hemoglobin_clean.txt', 'r') as f:
     seq = f.read().strip().upper()  # Limpia residuos, asegura mayúsculas
 
 # Ejercicio 4: Mostrar información importante
